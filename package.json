@@ -1,0 +1,19 @@
+{
+  "name": "css-workshop",
+  "version": "1.0.0",
+  "description": "9elements CSS Workshop starter page",
+  "main": "index.js",
+  "scripts": {
+    "start": "npx gulp && npx gulp watch",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Nils Binder @ 9elements",
+  "license": "ISC",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-sass": "^4.1.0",
+    "sass": "^1.32.4"
+  }
+}
