@@ -1,2 +1,20 @@
+@import 'config';
+
+@import '../../node_modules/gorko/gorko.scss';
+
+@import 'reset';
 
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
+
+body {
+  @include apply-utility('font', 'base');
+  @include apply-utility('color', 'gray');
+  @include apply-utility('bg', 'light-shade');
+  line-height: 1.5;
+}
+
+h1, h2, h3, h4 {
+  @include apply-utility('weight', 'bold');
+  @include apply-utility('color', 'dark');
+  @include apply-utility('leading', 'tight');
+}
