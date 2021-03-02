@@ -18,3 +18,14 @@ h1, h2, h3, h4 {
   @include apply-utility('color', 'dark');
   @include apply-utility('leading', 'tight');
 }
+
+// Utilities
+@import 'utilities/sr-only';
+@import 'utilities/uppercase';
+@import 'utilities/wrapper';
+
+// Layout
+@import 'layout/auto-grid';
+@import 'layout/flow';
+@import 'layout/sidebar';
+@import 'layout/switcher';
