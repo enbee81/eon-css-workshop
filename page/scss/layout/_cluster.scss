@@ -1,0 +1,20 @@
+.cluster {
+  overflow: hidden;
+
+  > * {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: var(--cluster-justification, flex-start);
+    /* Fallback margin value */
+    margin: -0.5rem;
+    /* ↓ Multiply by -1 to make negative */
+    margin: calc(var(--cluster-gap-vertical, var(--cluster-gap, 1rem)) / 2 * -1) calc(var(--cluster-gap, 1rem) / 2 * -1);
+  }
+
+  > * > * {
+    /* Fallback margin value */
+    margin: 0.5rem;
+    /* ↓ Half the value to each element, combining to make the whole */
+    margin: calc(var(--cluster-gap-vertical, var(--cluster-gap, 1rem)) / 2) calc(var(--cluster-gap, 1rem) / 2);
+  }
+}
