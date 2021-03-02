@@ -1,0 +1,18 @@
+.person {
+
+  text-align: center;
+
+  img {
+    border: get-size('300') solid get-color('light');
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: get-size('200');
+    width: 13.75rem;
+    height: 13.75rem;
+    object-fit: cover;
+  }
+
+  figcaption > span {
+    display: block;
+  }
+}

@@ -1,0 +1,6 @@
+.person-grid {
+  --auto-grid-gap: #{get-size('500')};
+  --auto-grid-gap-vertical: #{get-size('600')};
+
+  padding: 0;
+}

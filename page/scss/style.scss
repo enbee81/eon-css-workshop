@@ -10,6 +10,7 @@ body {
   @include apply-utility('font', 'base');
   @include apply-utility('color', 'gray');
   @include apply-utility('bg', 'light-shade');
+  padding-bottom: get-size('800');
   line-height: 1.5;
 }
 
@@ -29,3 +30,10 @@ h1, h2, h3, h4 {
 @import 'layout/flow';
 @import 'layout/sidebar';
 @import 'layout/switcher';
+
+// Blocks
+@import 'blocks/news-grid';
+@import 'blocks/news-teaser';
+@import 'blocks/person';
+@import 'blocks/person-grid';
+@import 'blocks/why';

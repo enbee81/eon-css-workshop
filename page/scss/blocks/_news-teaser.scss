@@ -1,0 +1,13 @@
+.news-teaser {
+  padding: get-size('300');
+  max-width: 32rem;
+
+  img {
+    width: 100%;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}

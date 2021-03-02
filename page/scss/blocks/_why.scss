@@ -1,0 +1,16 @@
+.why {
+  --sidebar-gap: #{get-size('300')};
+  --sidebar-gap-vertical: #{get-size('700')};
+  --sidebar-threshold: 45%;
+  --sidebar-width: 30rem;
+
+  // Target Sidebar inner div
+  > * {
+    align-items: center;
+  }
+
+  &__decoration img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
