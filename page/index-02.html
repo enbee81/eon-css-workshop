@@ -8,8 +8,20 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <header class="bg-light">
+    <div class="wrapper">
+      <nav aria-label="main" class="cluster | main-nav">
+        <ul class="main-nav__list">
+          <li><a class="uppercase weight-bold br-l" href="#intro">Intro</a></li>
+          <li><a class="uppercase weight-bold br-l" href="#why">Why</a></li>
+          <li><a class="uppercase weight-bold br-l" href="#news">News</a></li>
+          <li><a class="uppercase weight-bold br-l" href="#who">Who we are</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
   <main id="main" class="flow flow-space-800">
-    <section id="intro" class="bg-primary">
+    <section id="intro" class="intro | bg-primary">
       <div class="wrapper">
         <h1 class="text-700 md:text-800 color-light">We are the best company ever</h1>
       </div>
@@ -34,7 +46,7 @@
 
     <section id="news">
       <div class="wrapper | flow flow-space-400">
-        <h2 class="text-700">News</h2>
+        <h2 id="news-headline" class="text-700">News</h2>
         <div class="switcher | news-grid">
           <div class="switcher-inner">
             <article class="news-teaser | flow flow-space-200 | br-m bg-light" aria-label="This is my Teaser Headline">
@@ -141,5 +153,19 @@
     </section>
 
   </main>
+  <footer class="site-foot" role="contentinfo">
+    <div class="wrapper">
+      <div class="centerflex">
+        <p>&copy; 2021 – Best Company ever inc.</p>
+        <nav class="cluster" class="footer-navigation" aria-label="Legal information">
+          <ul>
+            <li><a href="#">Jobs</a></li>
+            <li><a href="#">Imprint</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

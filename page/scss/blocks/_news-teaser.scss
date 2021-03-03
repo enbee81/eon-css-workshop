@@ -1,6 +1,25 @@
 .news-teaser {
   padding: get-size('300');
   max-width: 32rem;
+  box-shadow:
+    0 0 30px rgba(0,0,0,0.2),
+    0 2px 3px rgba(0,0,0,0.1);
+
+  transition:
+    box-shadow 0.4s ease-out,
+    z-index 0s 0.4s linear;
+  position: relative;
+  z-index: 1;
+
+  &:hover {
+    box-shadow:
+      0 0 70px rgba(0,0,0,0.8),
+      0 8px 6px rgba(0,0,0,0.1);
+    transition:
+      box-shadow 0.4s ease-out,
+      z-index 0s 0s linear;
+    z-index: 2;
+  }
 
   img {
     width: 100%;

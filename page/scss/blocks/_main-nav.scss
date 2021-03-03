@@ -1,0 +1,33 @@
+.main-nav {
+
+  --cluster-justification: center;
+  padding: get-size('400') 0;
+  float: right;
+  overflow: visible;
+
+  li {
+    padding: 0;
+  }
+
+  a {
+    display: block;
+    text-decoration: none;
+    padding: get-size('200') get-size('400');
+    background: get-color('light-shade');
+    color: get-color('primary');
+
+    &:hover {
+      background: get-color('primary');
+      color: get-color('light');
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 0 0 2px get-color('primary') inset;
+    }
+  }
+}
+
+header {
+  display: flow-root;
+}

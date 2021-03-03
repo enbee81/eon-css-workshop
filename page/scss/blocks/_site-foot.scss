@@ -1,0 +1,29 @@
+.site-foot {
+  --centerflex-threshold: 48rem;
+
+  background: get-color('light');
+  color: get-color('gray');
+  padding: get-size('500') 0;
+
+  nav {
+    --cluster-justification: center;
+    --cluster-gap-vertical: 0.5em;
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    a {
+      color: get-color('primary');
+      text-decoration: none;
+      margin-top: get-size('200');
+      margin-bottom: get-size('200');
+
+      &:focus {
+        outline: none;
+        border-bottom: 8px solid;
+      }
+    }
+  }
+}

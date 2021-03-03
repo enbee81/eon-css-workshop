@@ -3,4 +3,12 @@
   --auto-grid-gap-vertical: #{get-size('600')};
 
   padding: 0;
+
+  li:before {
+    /*
+    add zero-width space so the list is still announced
+    as list via screen readers.
+    */
+    content: "\200B";
+  }
 }
